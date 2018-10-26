@@ -1,0 +1,58 @@
+		
+	/*start navi*/
+ 
+	.navi {
+		 
+		height: 50px;
+	 	box-sizing: border-box;
+		border-bottom: 2px solid #EECA5B;
+		background-color: #333;
+		/*text-align: center;*/
+		line-height: 48px;
+		/*display: flex;*/
+	}
+	
+	.navi ul {
+		float: left;
+		margin-left: 30px;
+	}
+	.navi ul li {
+		float: left;
+		color: #fff;
+		padding:0 30px;
+		font-size: 15px;
+		
+	}
+	
+	.navi ul li a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+ 
+	.navi a img {
+		float: left;
+		width: 55px;
+		margin-left: 0px;
+ 		margin-top: 10px;
+	}
+	
+	/*navi end*/
+	
+	/*video start*/
+	.video {
+		background-image: url(../img/video-back.png);
+		height: 720px;
+		max-width: 1920px;
+	}
+	 .video .content {
+	 	text-align: center;
+	 	margin-top: 260px;
+	 }
+	 
+	 .content .title {
+	 	font-size: 42px;
+	 }
+	
+	
+	/*video end*/

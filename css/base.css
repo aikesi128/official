@@ -29,8 +29,10 @@ s,i,em{font-style:normal;text-decoration:none;}
 .col-red{color: #C81623!important;}
 
 /*公共类*/
-.aikesi {  /*版心 提取 */
-    width: 1200px;margin:0 auto;
+.w {  /*版心 提取 */
+    width: 1200px;
+    margin:0 auto;
+    background-color: rgb(2,235,255,.4);
 }
 .fl {
     float:left
