@@ -10,8 +10,8 @@ textarea { resize:none; } /*防止拖动*/
 img {border:0; vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
 table { border-collapse:collapse; }
 body {
-    font:12px/150% Arial,Verdana,"\5b8b\4f53";
-    color:#666;
+    font:12px/150%  simhei Arial,Verdana,"\5b8b\4f53";
+    color:#000;
     background:#fff
 }
 .clearfix:before,.clearfix:after {  /*清楚浮动*/
@@ -32,7 +32,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 .w {  /*版心 提取 */
     width: 1200px;
     margin:0 auto;
-    background-color: rgb(2,235,255,.4);
+    /*background-color: gray;*/
 }
 .fl {
     float:left

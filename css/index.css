@@ -1,5 +1,7 @@
 		
-	/*start navi*/
+	/*当屏幕尺寸大于*/
+	@media only screen and (min-width: 1280px) {
+		/*start navi*/
  
 	.navi {
 		 
@@ -43,16 +45,56 @@
 	.video {
 		background-image: url(../img/video-back.png);
 		height: 720px;
-		max-width: 1920px;
+		width: 100%;
+ 		max-width: 1920px;
+		margin: 0 auto;
+		/*position: relative*/
 	}
-	 .video .content {
-	 	text-align: center;
-	 	margin-top: 260px;
+	.video .w {
+		height: 720px;
+	}
+	
+	.video .w .content
+	{
+		width: 100%;
+		height: auto;
+		text-align: center;
+		padding-top: 260px;
+	}
+	 .video .w .content p:nth-child(1) {
+	 	
+	 	font-family: SimHei;
+	 	font-size: 42px;
+	 	color: #000;
+	 	font-weight: 700;
+	 	height: 21px;
+	 	line-height: 21px;
+	 	margin-bottom: 26px;
 	 }
 	 
-	 .content .title {
-	 	font-size: 42px;
+	 .video .w .content .line {
+	 	display: block;
+	 	width: 90px;
+	 	height: 1px;
+	 	background-color: #191919;
+	 	margin: 0 auto;
+	 	margin-bottom: 23px;
+	 }
+	 
+	 .video .w .content .des {
+		font-size:12px;
+		font-family:黑体;
+		font-weight:normal;
+		color:rgba(90,88,88,1);
+ 		padding-bottom: 25px;
+	 	
 	 }
 	
 	
+	 
+	
 	/*video end*/
+	}
+
+	
+ 
