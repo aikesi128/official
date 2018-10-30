@@ -1,4 +1,8 @@
 		
+	html {
+		font-size: 62.5%;
+	}	
+		
 	/*当屏幕尺寸大于*/
 	@media only screen and (min-width: 1280px) {
 		/*start navi*/
@@ -64,7 +68,7 @@
 	 .video .w .content p:nth-child(1) {
 	 	
 	 	font-family: SimHei;
-	 	font-size: 42px;
+	 	font-size: 4.2rem;
 	 	color: #000;
 	 	font-weight: 700;
 	 	height: 21px;
@@ -149,8 +153,8 @@
 		/*position: relative*/
 	}
 	 .w {
-		width: 340px;
-		max-width: 640px;
+		width: 320px;
+		max-width: 320px;
 		margin: 0 auto;
 	}
 	.video .w {
@@ -167,7 +171,7 @@
 	 .video .w .content p:nth-child(1) {
 	 	
 	 	font-family: SimHei;
-	 	font-size: 20px;
+	 	font-size: 1.7rem;
 	 	color: #000;
 	 	font-weight: 700;
 	 	height: 21px;
@@ -186,7 +190,7 @@
 	 }
 	 
 	 .video .w .content .des {
-		font-size:12px;
+		font-size:1rem;
 		font-family:黑体;
 		font-weight:normal;
 		color:rgba(90,88,88,1);
