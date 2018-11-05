@@ -3,7 +3,7 @@
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
 fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
 ul, ol { list-style:none; }
-input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+input { padding-top:0; padding-bottom:0; font-family: "Simhei","宋体";}
 select, input { vertical-align:middle;}
 select, input, textarea { font-size:12px; margin:0; }
 textarea { resize:none; } /*防止拖动*/
@@ -14,6 +14,7 @@ body {
     color:#000;
     background:#fff
 }
+a {text-decoration: none;}
 .clearfix:before,.clearfix:after {  /*清楚浮动*/
     content:"";
     display:table;
@@ -30,7 +31,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 
 /*公共类*/
 .w {  /*版心 提取 */
-    width: 1200px;
+    width: 1230px;
     margin:0 auto;
     /*background-color: gray;*/
 }
