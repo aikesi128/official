@@ -1,92 +1,223 @@
-
-	/*navi start*/
-	.navi {
-		height: 48px;
-		background-color: #484848;
-		border-bottom: 2px solid #F7D059;
-	}
 	
-	.content {
-		background-color: red;
+	/*导航栏开始*/
+	.navi-site {
+		
 		height: 48px;
-	}
-	
-	.logo {
-		float: left;
-		margin-left: 40px;
-		height: 48px;
-		width: 54px;
-	}
-	.logo img {
-		height: 27px;
-		width: 54px;
-		margin-top: 10px;
+		border-bottom: 2px solid #F4C947;
+		background: #333333;
 		
 	}
-	.navi ul {
+	
+	.navi-site .w {
 		height: 48px;
-		float: left;
-		margin-left: 35px;
+		background: #C81623;
 	}
 	
-	.navi ul li{
-		float: left;
-		padding: 0 80px;
+	.navi-site .w ul {
 		height: 48px;
+		width: 1000px;
 	}
-	.navi ul li a {
+	
+	.navi-site ul li {
+		float: left;
 		height: 48px;
+		width: 180px;
+		text-align: center;
 		line-height: 48px;
-		color: #FFFFFF;
-		font-size: 16px;
+		 
 	}
 	
-	/*navi end*/
+	.navi-site ul li img {
+		height: 27px;
+		width: 54px;
+		
+	}
 	
-	/*video start*/
+	.navi-site ul li a {
+		display: block;
+		color: white;
+		font-size: 15px;
+		height: 48px;
+		width: 100%;
+	}
+
+	/*导航栏结束*/
+	
+	/*视频区域开始*/
 	.video {
 		height: 718px;
-		background-color: green;
-		text-align: center;
-		position: relative;
+		width: 100%;
 	}
-	
-	.video h1 {
-		font-size: 40px;
-		height: 40px;
-		line-height: 40px;
-		padding-top: 260px;
+ 	
+	.playcontent {
+		height: 718px;
+		text-align: center;
+		background: #F4C947;
+		overflow: hidden;
+ 	}
+	.playcontent h1 {
+		font-size: 39px;
+		height: 39px;
+		line-height: 39px;
+		margin-top: 263px;
 		font-family: simhei;
 		font-weight: 700;
+		color: rgba(0,0,0,.9);;
 	}
 	
-	.video .line {
+	.playcontent span {
 		display: block;
-		height: 26px;
-		width: 90px;
-		border-bottom: 1px #000 solid;
 		margin: 0 auto;
+		width: 96px;
+		height: 25px;
+		border-bottom: 1px solid #191813;
+		margin-bottom: 26px;
 	}
 	
-	.video p {
-		padding-top: 26px;
-		height: 19px;
+	.playcontent p {
 		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		height: 19px;
+		margin-bottom: 26px;
+		
+	}
+	.playcontent play {
+		width: 125px;
+		height: 24px;
 	}
 	
-	.video img  {
-		display: block;
-		width: 124px;
-		height: 24px;
+	/*视频区域结束*/
+
+	/*企业介绍开始*/
+	.intro {
+		height: 528px;
+		max-width: 1920px;
+		background: url(../img/intro_bg.png) right bottom ;	
 		margin: 0 auto;
-		padding-top: 26px;
- 		
 	}
-	.video video {
-		display: none;
-		width: 1230px;
-		position: absolute;
-		top: 0;
-		background-color: #FFFFFF;
+	.intro .w {
+		/*background-color: royalblue;*/
+		height: 528px;
+		overflow: hidden;
 	}
-	/*video end*/
+	
+	.intro .w h1 {
+		font-family: simhei;
+		font-size: 30px;
+		color: rgba(0,0,0,.9);
+		height: 30px;
+		line-height: 30px;
+		margin-top: 90px;
+		font-weight: 700;
+		
+	}
+	
+	.intro .w  span {
+		display: block;
+		height: 25px;
+		width: 90px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid #F2C54C;
+	}
+	.intro .w p.item1 {
+		height: 190px;
+		font-size: 16px;
+		color: rgba(0,0,0,.8);
+		line-height: 32px;
+	}
+	
+	.intro .w p.item2 {
+		height: 165px;
+		font-size: 16px;
+		color: rgba(0,0,0,.8);
+		line-height: 32px;
+	}
+	/*企业介绍结束*/
+ 
+	/*列表展示开始*/
+	.list {
+		height: 858px;
+		background: antiquewhite;
+		overflow: hidden;
+	}
+	
+	.list .list-l {
+		width: 436px;
+		height: 858px;
+		float: left;
+		background-color: red;
+		/*overflow: hidden;*/
+	}
+	
+	.list .list-r {
+		float: right;
+		width: 784px;
+		height: 858px;
+		background-color: gold;
+		/*position: relative;*/
+		/*text-align: center;*/
+	}
+	
+	.list-l div.num {
+		width: 188px;
+		height: 858px;
+		/*margin-top: 71px;*/
+		float: left;
+		/*overflow: hidden;*/
+	}
+	
+	.list-l div.num span {
+		display: block;
+		font-size: 27px;
+		font-weight: 700;
+		font-family: simhei;
+		color: rgba(0,0,0,.9);
+		height: 27px;
+		line-height: 27px;
+	}
+	.list-l div.num span.one {
+ 		margin-top: 102px;
+ 	}
+ 	
+ 	.list-l div.num span.two {
+ 		margin-top: 148px;
+ 	}
+ 	
+ 	.list-l div.num span.three {
+ 		margin-top: 151px;
+ 		margin-bottom: 149px;
+ 	}
+ 	
+ 	
+	.list-l ul.content {
+		width: 246px;
+		margin-top: 71px;
+		float: right;
+		height: 710px;
+	}
+	
+	.list-l ul.content li {
+		height: 88px;
+		line-height: 88px;
+		font-size: 27px;
+		font-weight: 700;
+		font-family: simhei;
+		color: rgba(0,0,0,.9);
+	}
+	
+	.list-r img {
+		/*position: absolute;*/
+		padding-left: 352px;
+		padding-top: 174px;
+		display: block;
+		
+	}
+	
+	.list-r p.fir {
+		/*position: absolute;*/
+		padding-left: 100px;
+	}
+	
+	
+	/*列表展示结束*/
