@@ -15,7 +15,7 @@
 	
 	.navi-site .w ul {
 		height: 48px;
-		width: 1000px;
+		width: 100%px;
 	}
 	
 	.navi-site ul li {
@@ -483,6 +483,504 @@
 	 }
 	/*footer 结束 a29 16*/
 	
+	
+	/*************************100-1200px**********************/
+	@media only screen and (min-width: 100px) and (max-width: 1200px) {
+		
+		.w {
+			width: 600px;
+			margin: 0 auto;
+			/*background-color: red;*/
+		}
+		
+			/*导航栏开始*/
+	.navi-site {
+		
+		height: 48px;
+		border-bottom: 2px solid #F4C947;
+		background: #333333;
+		
+	}
+	
+	.navi-site .w {
+		height: 48px;
+		/*background: #C81623;*/
+	}
+	
+	.navi-site .w ul {
+		height: 48px;
+		width: 100%;
+	}
+	
+	.navi-site ul li {
+		float: left;
+		height: 48px;
+		width: 20%;
+		text-align: center;
+		line-height: 48px;
+		 
+	}
+	
+	.navi-site ul li img {
+		height: 18px;
+		width: 36px;
+		
+	}
+	
+	.navi-site ul li a {
+		display: block;
+		color: white;
+		font-size: 10px;
+		height: 48px;
+		width: 100%;
+	}
+
+	/*导航栏结束*/
+	
+	/*视频区域开始*/
+	.video {
+		height: 718px;
+		width: 100%;
+	}
+ 	
+	.playcontent {
+		height: 718px;
+		text-align: center;
+		/*background: #F4C947;*/
+		overflow: hidden;
+ 	}
+	.playcontent h1 {
+		font-size: 22px;
+		height: 39px;
+		line-height: 39px;
+		margin-top: 263px;
+		font-family: simhei;
+		font-weight: 700;
+		color: rgba(0,0,0,.9);;
+	}
+	
+	.playcontent span {
+		display: block;
+		margin: 0 auto;
+		width: 80px;
+		height: 25px;
+		border-bottom: 1px solid #191813;
+		margin-bottom: 26px;
+	}
+	
+	.playcontent p {
+		font-size: 16px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		height: 19px;
+		margin-bottom: 26px;
+		
+	}
+	.playcontent play {
+		width: 83px;
+		height: 16px;
+	}
+	
+	.playcontent play img {
+		width: 100%;
+	}
+	
+	/*视频区域结束*/
+
+	/*企业介绍开始*/
+	.company {
+		height: 528px;
+		background-color: #FAFAFA;
+	}
+	.intro {
+		height: 528px;
+		max-width: 1220px;
+		background: url(../img/intro_bg.png) right bottom ;	
+		margin: 0 auto;
+	}
+	.intro .w {
+		/*background-color: royalblue;*/
+		height: 528px;
+		overflow: hidden;
+	}
+	
+	.intro .w h1 {
+		font-family: simhei;
+		font-size: 30px;
+		color: rgba(0,0,0,.9);
+		height: 30px;
+		line-height: 30px;
+		margin-top: 90px;
+		font-weight: 700;
+		
+	}
+	
+	.intro .w  span {
+		display: block;
+		height: 25px;
+		width: 90px;
+		margin-bottom: 25px;
+		border-bottom: 1px solid #F2C54C;
+	}
+	.intro .w p.item1 {
+		height: 190px;
+		font-size: 16px;
+		color: rgba(0,0,0,.8);
+		line-height: 32px;
+	}
+	
+	.intro .w p.item2 {
+		height: 165px;
+		font-size: 16px;
+		color: rgba(0,0,0,.8);
+		line-height: 32px;
+	}
+	/*企业介绍结束*/
+ 
+	/*列表展示开始*/
+	.list {
+		height: 858px;
+		/*background: antiquewhite;*/
+		overflow: hidden;
+	}
+	
+	.list .list-l {
+		width: 430px;
+		height: 858px;
+		float: left;
+		/*background-color: red;*/
+		/*overflow: hidden;*/
+	}
+	
+	.list .list-r {
+		float: right;
+		width: 790px;
+		height: 858px;
+		/*background-color: gold;*/
+		/*position: relative;*/
+		/*text-align: center;*/
+	}
+	
+	.list-l div.num {
+		width: 190px;
+		height: 858px;
+		/*margin-top: 71px;*/
+		float: left;
+		/*overflow: hidden;*/
+	}
+	
+	.list-l div.num span {
+		display: block;
+		font-size: 40px;
+		font-weight: 700;
+		font-family: simhei;
+		color: rgba(0,0,0,.9);
+		height: 27px;
+		line-height: 27px;
+	}
+	.list-l div.num span.one {
+ 		margin-top: 102px;
+ 	}
+ 	
+ 	.list-l div.num span.two {
+ 		margin-top: 148px;
+ 	}
+ 	
+ 	.list-l div.num span.three {
+ 		margin-top: 151px;
+ 		margin-bottom: 149px;
+ 	}
+ 	
+ 	
+	.list-l ul.content {
+		width: 240px;
+		margin-top: 71px;
+		float: right;
+		height: 710px;
+	}
+	
+	.list-l ul.content li {
+		height: 88px;
+		line-height: 88px;
+		font-size: 46px;
+		font-weight: 700;
+		font-family: simhei;
+		color: rgba(0,0,0,.9);
+	}
+	
+	.list-r img {
+		/*position: absolute;*/
+		padding-left: 345px;
+		padding-top: 178px;
+		display: block;
+		
+	}
+	
+	.list-r p.fir {
+		/*position: absolute;*/
+		padding-left: 260px;
+		height: 19px;
+		padding-top: 46px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r p.sec {
+		/*position: absolute;*/
+		padding-left: 260px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r p.thr {
+		/*position: absolute;*/
+		padding-left: 260px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	/*列表展示结束*/
+	
+	/*开始DVMS*/
+	.dvms {
+		height: 970px;
+		text-align: center;
+		position: relative;
+	}
+	
+	.dvms h1 {
+		
+		font-size: 30px;
+		line-height: 30px;
+		padding-top: 80px;
+		font-family: simhei;
+		color: rgba(0,0,0,.9);
+		font-weight: 700;
+		text-align: left;
+	 
+	}
+	
+	.dvms span {
+		display: block;
+		width: 90px;
+		height: 1px;
+		padding-top: 26px;
+		border-bottom: 1px solid #F2C54C;
+ 		
+	}
+	
+	.dvms img {
+		text-align: center;
+		padding-top: 46px;
+	}
+	
+	.dvms p:first-letter{
+		 color: #F3C54D;
+         font-size: 29px;
+         font-family: simhei;
+	}
+	.dvms p {
+		font-size: 16px;
+		color: rgb(0,0,0,.8);
+		height: 20px;
+		line-height: 23px;
+		text-align: left;
+		font-family: simhei;
+		
+	}
+	
+	.dvms p.fir {
+		width: 492px;
+		height: 139px;
+		position: absolute;
+		left: 150px;
+		top: 250px;
+ 
+	}
+	
+	.dvms p.sec {
+		width: 480px;
+		height: 180px;
+		position: absolute;
+		left: 45px;
+		bottom: 140px;
+ 
+	}
+	
+	.dvms p.thr {
+		width: 495px;
+		height: 103px;
+		position: absolute;
+		left: 720px;
+		bottom: 302px;
+ 
+	}
+	/*结束DVMS*/
+	
+	/*软件技术开始*/
+	.soft {
+		height: 370px;
+		overflow: hidden;
+		/*background-color: firebrick;*/
+	}
+	.soft ul {
+		height: 30px;
+		width: 1220px;
+		margin-top: 100px;
+	}
+	.soft ul li {
+		width: 200px;
+		height: 30px;
+		float: left;
+		text-align: center;
+		font-size: 23px;
+		color: rgba(0,0,0,.8);
+		
+	}
+	.soft ul li:first-child {
+		color: rgba(0,0,0,.9);
+		font-size: 29px;
+		color: rgba(0,0,0,.8);
+		font-weight: 700;
+	}
+	.soft ul li:first-child::after{
+		content: "";
+		display: block;
+		width: 97px;
+		height: 10px;
+		border-bottom: 1px solid #EEC24B;
+		padding-top: 22px;
+		margin: 0 auto;
+		
+		
+	}
+	
+	.soft div {
+		height: 170px;
+		padding-top: 66px;
+	}
+	
+	.soft div p {
+		font-size: 19px;
+		line-height: 52px;
+		color: rgba(0,0,0,.8);
+		font-family: simhei;
+		padding-left: 95px;
+		background: url(../img/icon_spcjzd2.png) no-repeat 40px 28px;
+	}
+	/*软件技术结束*/
+	
+ 	/*联系开始*/
+ 	.contact {
+ 		height: 410px;
+ 		background-color: #FAFAFA;
+ 	}
+ 	.contact .w {
+ 		height: 410px;
+ 	}
+ 	.contact p {
+ 		height: 26px;
+ 		padding-top: 103px;
+ 		text-align: center;
+ 		font-family: simhei;
+ 		font-size: 26px;
+ 		font-weight: 700;
+ 		
+ 	}
+ 	
+ 	.contact .line {
+ 		display: block;
+ 		padding-top: 26px;
+ 		height: 1px;
+ 		width: 90px;
+ 		margin: 0 auto;
+ 		border-bottom: 1px solid #F2C54C;
+ 	}
+ 	
+ 	.contact ul {
+ 		height: 81px;
+ 		padding-top: 75px;
+ 	}
+ 	
+ 	.contact ul li {
+ 		width: 50%;
+ 		height: 81px;
+ 		float: left;
+ 		text-align: center;
+ 	}
+ 	
+ 	.contact ul li span {
+ 		display: block;
+ 		padding-top: 23px;
+ 		color: rgba(0,0,0,.8);
+ 		font-size: 17px;
+ 	}
+ 	/*联系结束*/
+ 	
+	/*地图开始*/
+	.map {
+		height: 670px;
+		max-width: 1920px;
+		margin: 0 auto;
+		overflow: hidden;
+		background: url(../img/地图.png) no-repeat left top;
+		
+	}
+	/*地图结束*/
+	
+	/*footer 开始*/
+	.footer {
+		text-align: center;
+	}
+	 .footer img {
+	 	display: block;
+	 	width: 129px;
+	 	height: 16px;
+	 	margin: 0 auto;
+	 	padding-top: 40px;
+	 }
+	 
+	 .footer span {
+	 	display: block;
+		padding-top: 15px;
+		width: 475px;
+		height: 1px;
+		border-bottom: 1px solid #000;
+		margin: 0 auto;
+	 }
+	 
+	 .footer p {
+	 	color: rgba(0,0,0,.8);
+	 	font-size: 20px;
+	 	line-height: 20px;
+	 	padding-top: 16px;
+	 	padding-bottom: 15px;
+	 	
+	 }
+	 
+	 .footer a {
+	 	text-decoration: none;
+	 	color: #000000;
+	 	font-size: 17px;
+	 	line-height: 20px;
+	 	padding-bottom: 50px;
+	 	
+	 }
+		 
+	}
 /**ipad**/
 @media only screen and (min-width:768px)and(max-width:1024px){}
 /**iphone**/
