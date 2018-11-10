@@ -57,6 +57,56 @@
 		});
 		
 		
+		//播放视频
+		$(".play").click(function(){
+			
+			$(".playarea").fadeIn("slow");
+			$(".playarea video").get(0).play();
+//			$(".playarea video").get(0).style.autoplay="autoplay";
+			
+		})
+		
+		$(".playarea video").mouseenter(function(){
+			
+			$(".playarea i").fadeIn(400);
+			
+		})
+		
+		$(".playarea video").mouseleave(function(){
+			
+			$(".playarea i").fadeOut(400);
+			
+		})
+		
+		$(".playarea i").mouseenter(function(){
+			
+			$(this).css("opacity",1);
+			$(this).fadeIn(200);
+			
+		})
+		
+		$(".playarea i").mouseleave(function(){
+			
+			$(this).css("opacity",.6);
+			$(this).fadeOut(500);
+		})
+		
+		$(".playarea i").click(function(){
+			
+			$(".playarea").fadeOut("slow");
+			$(".playarea video").get(0).pause();
+			$(".playarea video").get(0)["currentTime"] = 0;
+			
+		})
+		
+		$(".playarea video").get(0).onended =  function(){
+			
+			$(".playarea").fadeOut("fast");
+			$(".playarea video").get(0).pause();
+			$(".playarea video").get(0)["currentTime"] = 0;
+		}
+		
+		
 	 
 		
 	})
