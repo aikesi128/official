@@ -54,6 +54,7 @@
 		text-align: center;
 		/*background: #F4C947;*/
 		overflow: hidden;
+		position: relative;
  	}
 	.playcontent h1 {
 		font-size: 39px;
@@ -85,7 +86,52 @@
 	.playcontent play {
 		width: 125px;
 		height: 24px;
+		cursor: pointer;
 	}
+	
+	.playcontent .playarea {
+		width: 100%;
+		position: absolute;
+		height: 718px;
+		/*float: left;*/
+		left: 0%;
+		top: 0px;
+		background-color: black;
+		display: none;
+	}
+	
+	
+	.playcontent .playarea video {
+		position: absolute;
+		width: 80%;
+		/*height: 500px;*/
+		/*height: 600px;*/
+		margin: 100px auto;
+		left: 10%;
+		border: none;
+	}
+	
+	.playcontent .playarea i {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		margin-top: 110px;
+		right: 12%;
+		border-radius: 10px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 38px;
+		font-weight: 700;
+		font-family: simhei;
+		color: rgba(255,255,255,.6);
+		background-color: rgb(0,0,0,.4);
+		opacity: 0.9;
+		display: none;
+	}
+	
+	
+	
+	 
 	
 	/*视频区域结束*/
 
@@ -125,14 +171,15 @@
 		border-bottom: 1px solid #F2C54C;
 	}
 	.intro .w p.item1 {
-		height: 190px;
+		/*height: 190px;*/
+		padding-bottom: 45px;
 		font-size: 16px;
 		color: rgba(0,0,0,.8);
 		line-height: 32px;
 	}
 	
 	.intro .w p.item2 {
-		height: 165px;
+		/*height: 165px;*/
 		font-size: 16px;
 		color: rgba(0,0,0,.8);
 		line-height: 32px;
@@ -174,11 +221,15 @@
 	.list-l div.num span {
 		display: block;
 		font-size: 40px;
-		font-weight: 700;
+		font-weight: 400;
 		font-family: simhei;
 		color: rgba(0,0,0,.9);
 		height: 27px;
 		line-height: 27px;
+	}
+	
+	.list-l div.num span[class=one]{
+		font-weight: 700;
 	}
 	.list-l div.num span.one {
  		margin-top: 102px;
@@ -205,12 +256,43 @@
 		height: 88px;
 		line-height: 88px;
 		font-size: 46px;
-		font-weight: 700;
+		font-weight: 400;
 		font-family: simhei;
 		color: rgba(0,0,0,.9);
+		cursor: pointer;
+		position: relative;
 	}
 	
-	.list-r img {
+	 ul.content li span{
+		/*display: block;*/
+		position: absolute;
+		line-height: 0;
+		opacity: 0;
+		height: 1px;
+		width: 97px;
+		background-color: #F7BA27;
+		left: 0;
+		bottom: 0;
+		
+	} 
+	 ul.content span.first {
+	 	/*background-color: red;*/
+	 	opacity: 1;
+	 }
+	 
+	.list-l ul.content li:first-child {
+		font-weight: 700;
+	}
+	.list-r div {
+		display: none;
+		/*position: relative;*/
+		width: 100%;
+		height: 858px;
+	}
+	.list-r .divlistShow {
+		display: block;
+	}
+	.list-r .first img {
 		/*position: absolute;*/
 		padding-left: 345px;
 		padding-top: 178px;
@@ -218,9 +300,9 @@
 		
 	}
 	
-	.list-r p.fir {
+	.list-r .first p.fir {
 		/*position: absolute;*/
-		padding-left: 260px;
+		padding-left: 292px;
 		height: 19px;
 		padding-top: 46px;
 		line-height: 19px;
@@ -230,9 +312,9 @@
 		
 	}
 	
-	.list-r p.sec {
+	.list-r .first p.sec {
 		/*position: absolute;*/
-		padding-left: 260px;
+		padding-left: 292px;
 		height: 19px;
 		padding-top: 10px;
 		line-height: 19px;
@@ -242,9 +324,9 @@
 		
 	}
 	
-	.list-r p.thr {
+	.list-r .first p.thr {
 		/*position: absolute;*/
-		padding-left: 260px;
+		padding-left: 292px;
 		height: 19px;
 		padding-top: 10px;
 		line-height: 19px;
@@ -253,6 +335,325 @@
 		color: rgba(0,0,0,.8);
 		
 	}
+	
+	/*second*/
+ 	.list-r .second img {
+		/*position: absolute;*/
+		padding-left: 201px;
+		padding-top: 259px;
+		display: block;
+		
+	}
+	
+	.list-r .second p.fir {
+		/*position: absolute;*/
+		padding-left: 238px;
+		height: 19px;
+		padding-top: 76px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .second p.sec {
+		/*position: absolute;*/
+		padding-left: 238px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .second p.thr {
+		/*position: absolute;*/
+		padding-left: 238px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	/*third*/
+	 
+	.list-r .third img {
+		/*position: absolute;*/
+		padding-left: 365px;
+		padding-top: 152px;
+		display: block;
+		
+	}
+	
+	.list-r .third p.fir {
+		/*position: absolute;*/
+		padding-left: 213px;
+		height: 19px;
+		padding-top: 53px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .third p.sec {
+		/*position: absolute;*/
+		padding-left: 213px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .third p.thr {
+		/*position: absolute;*/
+		padding-left: 213px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	/*fourth*/
+	 
+	.list-r .fourth img {
+		/*position: absolute;*/
+		padding-left: 350px;
+		padding-top: 115px;
+		display: block;
+		
+	}
+	
+	.list-r .fourth p.fir {
+		/*position: absolute;*/
+		padding-left: 270px;
+		height: 19px;
+		padding-top: 48px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .fourth p.sec {
+		/*position: absolute;*/
+		padding-left: 270px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .fourth p.thr {
+		/*position: absolute;*/
+		padding-left: 270px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	/*five*/
+	 
+	.list-r .five img {
+		/*position: absolute;*/
+		padding-left: 238px;
+		padding-top: 275px;
+		display: block;
+		
+	}
+	
+	.list-r .five p.fir {
+		/*position: absolute;*/
+		padding-left: 238px;
+		height: 19px;
+		padding-top: 100px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .five p.sec {
+		/*position: absolute;*/
+		padding-left: 238px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .five p.thr {
+		/*position: absolute;*/
+		padding-left: 238px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	/*six*/
+	.list-r .six img {
+		/*position: absolute;*/
+		padding-left: 373px;
+		padding-top: 164px;
+		display: block;
+		
+	}
+	
+	.list-r .six p.fir {
+		/*position: absolute;*/
+		padding-left: 234px;
+		height: 19px;
+		padding-top: 117px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .six p.sec {
+		/*position: absolute;*/
+		padding-left: 234px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .six p.thr {
+		/*position: absolute;*/
+		padding-left: 234px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	/*seven*/
+ 
+	.list-r .seven img {
+		/*position: absolute;*/
+		padding-left: 376px;
+		padding-top: 165px;
+		display: block;
+		
+	}
+	
+	.list-r .seven p.fir {
+		/*position: absolute;*/
+		padding-left: 240px;
+		height: 19px;
+		padding-top: 115px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .seven p.sec {
+		/*position: absolute;*/
+		padding-left: 240px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .seven p.thr {
+		/*position: absolute;*/
+		padding-left: 240px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	/*eight*/
+	 
+	.list-r .eight img {
+		/*position: absolute;*/
+		padding-left: 351px;
+		padding-top: 167px;
+		display: block;
+		
+	}
+	
+	.list-r .eight p.fir {
+		/*position: absolute;*/
+		padding-left: 200px;
+		height: 19px;
+		padding-top: 67px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .eight p.sec {
+		/*position: absolute;*/
+		padding-left: 200px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
+	.list-r .eight p.thr {
+		/*position: absolute;*/
+		padding-left: 200px;
+		height: 19px;
+		padding-top: 10px;
+		line-height: 19px;
+		font-size: 19px;
+		font-family: simhei;
+		color: rgba(0,0,0,.8);
+		
+	}
+	
 	
 	/*列表展示结束*/
 	
@@ -348,41 +749,77 @@
 		height: 30px;
 		float: left;
 		text-align: center;
+		line-height: 30px;
 		font-size: 23px;
+		padding-bottom: 24px;
 		color: rgba(0,0,0,.8);
+		font-weight: 400;
+		cursor: pointer;
+		position: relative;
+		overflow: visible;
 		
 	}
-	.soft ul li:first-child {
+	.soft ul.title li.so-current {
 		color: rgba(0,0,0,.9);
 		font-size: 29px;
-		color: rgba(0,0,0,.8);
 		font-weight: 700;
 	}
-	.soft ul li:first-child::after{
-		content: "";
-		display: block;
+	 
+	.soft ul li span{
+		 
+		position: absolute;
 		width: 97px;
-		height: 10px;
-		border-bottom: 1px solid #EEC24B;
-		padding-top: 22px;
-		margin: 0 auto;
-		
-		
+		height: 1px;
+		background: #EEC24B;
+		left: 50px;
+		bottom: 1px;
+		opacity: 0;
+	 
+	}
+	
+	.soft ul li:first-child span{
+		opacity: 1;
 	}
 	
 	.soft div {
-		height: 170px;
+		height: 270px;
 		padding-top: 66px;
+		display: none;
 	}
 	
+	.soft div.first {
+		display: block;
+	}
+	
+	.soft div img {
+		width: 60px;
+		float: left;
+		padding-left: 60px;
+	}
 	.soft div p {
 		font-size: 19px;
-		line-height: 52px;
+		line-height: 30px;
 		color: rgba(0,0,0,.8);
 		font-family: simhei;
-		padding-left: 95px;
-		background: url(../img/icon_spcjzd2.png) no-repeat 40px 28px;
-	}
+		padding-left: 150px;
+		height: 200px;
+ 	}
+	
+	.soft div p.two {
+  	}
+	
+	.soft div.three img {
+		/*padding-top: 16px;*/
+ 	}
+	
+	.soft div p.four {
+ 	}
+	
+	.soft div p.five {
+ 	}
+	
+	.soft div p.six {
+ 	}
 	/*软件技术结束*/
 	
  	/*联系开始*/
@@ -483,6 +920,7 @@
 	 }
 	/*footer 结束 a29 16*/
 	
+<<<<<<< HEAD
 	
 	/*************************100-1200px**********************/
 	@media only screen and (min-width: 100px) and (max-width: 1200px) {
@@ -985,3 +1423,6 @@
 @media only screen and (min-width:768px)and(max-width:1024px){}
 /**iphone**/
  @media only screen and (width:320px)and (width:768px){}
+=======
+ 
+>>>>>>> d2ea06d9ea7f28a3e836b621614e834e5d498d2f
