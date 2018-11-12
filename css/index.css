@@ -1,4 +1,7 @@
 	
+	html body {
+		height: 100%;
+	}
 	/*导航栏开始*/
 	.navi-site {
 		
@@ -8,6 +11,9 @@
 		
 	}
 	
+	body {
+		overflow: hidden;
+	}
 	.navi-site .w {
 		height: 48px;
 		/*background: #C81623;*/
@@ -83,50 +89,57 @@
 		margin-bottom: 26px;
 		
 	}
-	.playcontent play {
+	.playcontent .play {
 		width: 125px;
 		height: 24px;
 		cursor: pointer;
+		margin: 0 auto;
 	}
 	
-	.playcontent .playarea {
+	.playcontent .play img {
+		cursor:  pointer;
+	}
+	
+	/*视频播放区域*/
+	 .playarea {
 		width: 100%;
-		position: absolute;
-		height: 718px;
-		/*float: left;*/
-		left: 0%;
+		height: 100%;
+		position: fixed;
+ 		/*left: 0px;*/
 		top: 0px;
 		background-color: black;
 		display: none;
+		z-index: 2;
 	}
 	
 	
-	.playcontent .playarea video {
-		position: absolute;
+	 .playarea video {
+		/*background: yellow;*/
 		width: 80%;
-		/*height: 500px;*/
-		/*height: 600px;*/
-		margin: 100px auto;
-		left: 10%;
-		border: none;
+		height: 80%;
+		padding-left: 10%;
+		padding-top: 5%;
+		object-fit: fill;
+		position: relative;
+		overflow: auto;
 	}
 	
-	.playcontent .playarea i {
+	 .playarea video i {
 		position: absolute;
 		width: 50px;
 		height: 50px;
-		margin-top: 110px;
-		right: 12%;
+		top: -50px;
+		left: -20px;
 		border-radius: 10px;
 		text-align: center;
 		line-height: 50px;
-		font-size: 38px;
+		font-size: 40px;
 		font-weight: 700;
 		font-family: simhei;
-		color: rgba(255,255,255,.6);
+		color: rgba(255,255,255,1);
 		background-color: rgb(0,0,0,.4);
 		opacity: 0.9;
-		display: none;
+		/*display: none;*/
 	}
 	
 	

@@ -63,8 +63,18 @@
 			$(".playarea").fadeIn("slow");
 			$(".playarea video").get(0).play();
 //			$(".playarea video").get(0).style.autoplay="autoplay";
-			
-		})
+			//禁止浏览器滚动事件
+			 
+		var jinzhi=0;
+document.addEventListener("touchmove",function(e){
+if(jinzhi==0){
+e.preventDefault();
+e.stopPropagation();
+}
+},false);
+			 
+	 
+		});
 		
 		$(".playarea video").mouseenter(function(){
 			
@@ -88,7 +98,7 @@
 		$(".playarea i").mouseleave(function(){
 			
 			$(this).css("opacity",.6);
-			$(this).fadeOut(500);
+//			$(this).fadeOut(500);
 		})
 		
 		$(".playarea i").click(function(){
