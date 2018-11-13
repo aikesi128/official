@@ -64,6 +64,7 @@
 			$(".playarea video").get(0).play();
 //			$(".playarea video").get(0).style.autoplay="autoplay";
 			//禁止浏览器滚动事件
+			
 			 
 		var jinzhi=0;
 document.addEventListener("touchmove",function(e){

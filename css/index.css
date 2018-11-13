@@ -7,12 +7,12 @@
 		
 		height: 48px;
 		border-bottom: 2px solid #F4C947;
-		background: #333333;
+		background: #333;
 		
 	}
 	
 	body {
-		overflow: hidden;
+		/*overflow: hidden;*/
 	}
 	.navi-site .w {
 		height: 48px;
