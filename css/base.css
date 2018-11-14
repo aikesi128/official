@@ -33,7 +33,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 .w {  /*版心 提取 */
     width: 1220px;
     margin:0 auto;
-    /*background-color: gray;*/
+    background-color: gray;
 }
 .fl {
     float:left
