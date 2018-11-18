@@ -183,7 +183,13 @@
 		left: 0;
 		display: none;
 	}
-	.solution .list ul li:first-child i{
+	.solution .list ul li .current {
+		
+		color: #000;
+		height: 11px;
+		font:700 11px/11px simhei;
+		
+	}{
 		color: #000;
 		font:700 29px simhei;
 	}
@@ -491,7 +497,7 @@
 	}
 	.solution .list ul li {
 		height: 25px;
-		width: 144px;
+		width: 146px;
 		float: left;
 		padding-bottom: 0px;
 		position: relative;
@@ -500,6 +506,14 @@
 		margin: 0 20px;
 		text-align: center;
 		background-color: red;
+	}
+	
+	.solution .list ul li .current {
+		
+		color: #000;
+		height: 11px;
+		font:700 11px/11px simhei;
+		
 	}
 	
 	.solution .list ul li i {
@@ -521,11 +535,9 @@
 		left: 12px;
 		display: none;
 	}
-	.solution .list ul li:first-child i{
-		color: #000;
-		height: 12px;
-		font:700 12px/12px simhei;
-	}
+	/*.solution .list ul li:first-child i{
+		
+	}*/
 	.solution .list ul li:first-child span{
 		display: block;
 		}

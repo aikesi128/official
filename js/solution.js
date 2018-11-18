@@ -13,6 +13,10 @@
 			
 			if($(document.body).width() < 768)
 			{
+				
+				$(this).siblings().find("i").removeClass("current");
+				$(this).find("i").addClass("current");
+				return;
 					//修改样式 li 宽度144
 				$(this).siblings().find("i").animate({
 					"fontSize":"8px",
