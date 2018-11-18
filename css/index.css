@@ -962,7 +962,8 @@
 @media screen and (max-width: 767px) {
 	.w {
 		background-color: #fff;
-		width: 375px;
+		/*width: 375px;*/
+		width: 99%;
 	}
 	
 	html body {
@@ -976,6 +977,10 @@
 	/*移动导航开始*/
 	.navi-m {
 		display: block;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
 	}
 	
 	.navi-m {
@@ -983,7 +988,7 @@
 		background-color: red; 
 		border-bottom: 1px solid #F2C846;
 		/*position: relative;*/
-		/*z-index: 2;*/
+		z-index: 2;
 	}
 	
 	.navi-m .title {
@@ -1161,10 +1166,12 @@
 		/*height: 528px;*/
 		background-color: #FAFAFA;
 		border: 1px solid #FAFAFA ;
+		height: auto;
 	}
 	.intro {
   		background: url(../img/intro_bg.png) right bottom ;	
 		margin: 0 auto;
+		height: auto;
 	}
 	 	
 	.intro .w h1 {
@@ -1213,16 +1220,19 @@
 		/*height: 40px;*/
 		/*background: pink;*/
 		overflow: hidden;
-		width: 100%;
+		/*width: 100%;*/
 		height: auto;
 		
 	}
 	
 	.list .list-l {
-		width: 100%;
+		width: 97%;
 		height: 196px;
+		overflow: hidden;
+		
 		/*float: left;*/
 		/*background-color: red;*/
+		margin: 0 auto;
  	}
 	
 	.list .list-r {
@@ -1266,18 +1276,18 @@
  	}
  	
  	.list-l div.num span.two {
- 		margin-top: 0px;
+ 		margin-top: 1px;
  		padding-left: 120px;
  	}
  	
  	.list-l div.num span.three {
  		margin-top: 0px;
- 		padding-left: 100px;
+ 		padding-left: 115px;
  	}
  	
  	.list-l div.num span.four {
  		margin-top: 0px;
- 		padding-left: 162px;
+ 		padding-left: 142px;
  	}
  	
  	
@@ -1290,6 +1300,7 @@
 		overflow: hidden;
 		/*height: 710px;*/
 		/*background: darkorchid;*/
+		/*margin-left: -200px;*/
 		 
 	}
 	
@@ -1861,11 +1872,14 @@
 	.soft {
 		height: auto;
 		overflow: hidden;
+		width: 90%;
+		/*background: red;*/
 		/*background-color: firebrick;*/
 	}
 	.soft ul {
 		height: 30px;
-		width: 300%;
+		width: 200%;
+		/*width: auto;*/
 		margin-top: 48px;
 		margin-left: 20px;
 	}

@@ -10,7 +10,7 @@
 			 $(".list-r div").hide().eq($(this).index()).show();
 			
 			//不加粗所有盒子, 加粗当前盒子文字
-			$(".list-l .content li").css("fontWeight",400).eq($(this).index()).css("fontWeight",700);
+			$(".list-l .content li i").css("fontWeight",400).eq($(this).index()).css("fontWeight",700);
 			
 			//显示黄色线条
 			$(".list-l .content li span").css("opacity",0);
@@ -36,12 +36,85 @@
 			 	$(".list-l .num span").eq(3).css("font-weight",700);
 			 }
 			
+			//滑动操作
+			//只有在屏幕宽度小于767的时候进行判定
+ 		if ($(document.body).width() < 767)
+ 		{
+ 			var ul = $(".list-l ul");
+ 			// ul 的margin-left
+ 			var left = parseInt($(".list-l ul").css("margin-left"));  			
+  			// 计算当前元素居中时候的margin-left
+  			//获取屏幕宽度的97%
+			var screenW = $(document.body).width() * 0.97;
+			//当前元素的宽度
+			var width = this.offsetWidth;
+			//屏幕左侧留出的距离
+			var left = (screenW - width) / 2;
+			//原本有marginleft为40像素 屏幕的一半减去之前元素宽度和 - 40
+			var sum1 = calculateUlSubElementWidthSum($(".list-l ul li"),$(this).index());
+			var mleft = left + 40 - sum1;
+
+ 			//获取临界值
+			var sum2 =	calculateUlSubElementWidthSum($(".list-l ul li"),8);
+ 			var linjieValue = (sum2 - screenW + 00);
+ 			
+ 			
+ 			// margin-left 不能小于临界值 不能大于20px
+ 			if(mleft > 40)
+ 			{
+ 				mleft = 40;
+ 			}
+ 			
+ 			if(mleft < -linjieValue)
+ 			{
+ 				mleft = -linjieValue - 0;
+ 			}
+ 			
+ 			ul.animate({
+ 				"marginLeft":mleft
+ 			},"normal");
+ 			
+ 			//移动上边的年的数字
+ 			$(".list-l .num").animate({
+ 				"marginLeft":mleft
+ 			},"normal");
+ 		}
+ 
 		});
 		
 		
 		//点击软件技术中的li标签
 		$(".soft ul li").click(function(){
-			
+ 		
+ 		//只有在屏幕宽度小于767的时候进行判定
+ 		if ($(document.body).width() < 767)
+ 		{
+ 			var ul = $(".soft ul");
+ 			// ul 的margin-left
+ 			var left = parseInt($(".soft ul").css("margin-left"));
+ 			
+// 			alert(calculateUlSubElementWidthSum($(".soft ul li"),$(this).index()));
+ 			var mleft = calculateLeft($(this));
+ 			//获取临界值
+ 			var linjieValue = calculateLinjieValue();
+ 			// margin-left 不能小于临界值 不能大于20px
+ 			if(mleft > 20)
+ 			{
+ 				mleft = 20;
+ 			}
+ 			
+ 			if(mleft < -linjieValue)
+ 			{
+ 				mleft = -linjieValue - 30;
+ 			}
+ 			
+ 			ul.animate({
+ 				"marginLeft":mleft
+ 			},"normal");
+ 		}
+ 
+
+ 
 			if($(this).hasClass("so-current"))
 			{
 				//do nothing
@@ -55,6 +128,44 @@
 				$(".soft div").eq($(this).index()).css("display","block");
 			}			
 		});
+		
+		//********************计算滑动函数********************
+		//计算li元素总宽度 参数为jquery对象 len为需要计算之前多少个元素的宽度
+		function calculateUlSubElementWidthSum(ele,len)
+		{
+			var sum = 0;
+//			alert(ele.length);
+			for (var i = 0; i<len; i++)
+			{
+				sum += ele.get(i).offsetWidth;				
+			}
+			
+			return sum;
+		}
+		
+		//计算当li元素居中后的margin-left 值 ele为原生jquery元素
+		function calculateLeft(ele){
+			//获取屏幕宽度的97%
+			var screenW = $(document.body).width() * 0.97;
+			//当前元素的宽度
+			var width = ele.get(0).offsetWidth;
+			//屏幕左侧留出的距离
+			var left = (screenW - width) / 2;
+			//原本有marginleft为20像素 屏幕的一半减去之前元素宽度和 - 20
+			var sum = calculateUlSubElementWidthSum($(".soft ul li"),ele.index());
+			var mleft = left - 20 - sum;
+			
+			return mleft;
+		}
+		
+		//计算元素居中后,末尾的临界值, marginleft不能小于临界值
+		function calculateLinjieValue(){
+			var screenW = $(document.body).width() * 0.97;
+			var sum =	calculateUlSubElementWidthSum($(".soft ul li"),6);
+			
+			return (sum - screenW + 0);
+		}
+		//*********************函数声明完毕*******************
 		
 		
 		//播放视频开始
