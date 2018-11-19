@@ -186,15 +186,16 @@
 	.solution .list ul li .current {
 		
 		color: #000;
-		height: 11px;
-		font:700 11px/11px simhei;
+		height: 23px;
+		font:700 28px/23px simhei;
 		
 	}{
 		color: #000;
 		font:700 29px simhei;
 	}
-	.solution .list ul li:first-child span{
+	.solution .list ul li span.show{
 		display: block;
+		left: 0;
 		}
 		
 	/*右侧内容*/
@@ -493,7 +494,7 @@
 		margin-left: 0px;
 		width: 600%;
 		height: 25px;;
-		background-color: green;
+		/*background-color: green;*/
 	}
 	.solution .list ul li {
 		height: 25px;
@@ -505,16 +506,10 @@
 		/*margin-right: 42px;*/
 		margin: 0 20px;
 		text-align: center;
-		background-color: red;
+		/*background-color: red;*/
 	}
 	
-	.solution .list ul li .current {
-		
-		color: #000;
-		height: 11px;
-		font:700 11px/11px simhei;
-		
-	}
+	
 	
 	.solution .list ul li i {
 		height: 10px;
@@ -526,6 +521,15 @@
 		/*position: absolute;*/
 		/*top: 2px;*/
 	}
+	
+	.solution .list ul li i.current {
+		
+		color: #000;
+		height: 11px;
+		font:700 11px/11px simhei;
+		
+	}
+	
 	.solution .list ul li span {
 		position: absolute;
 		width: 30px;
@@ -535,11 +539,10 @@
 		left: 12px;
 		display: none;
 	}
-	/*.solution .list ul li:first-child i{
-		
-	}*/
-	.solution .list ul li:first-child span{
+	 
+	.solution .list ul li span.show{
 		display: block;
+		left: 12px;
 		}
 		
 	/*右侧内容*/
@@ -811,7 +814,7 @@
 	
 	.solution .list ul li i {
 		height: 23px;
-		font: 16px/16px simhei;
+		font: 16px/23px simhei;
 		color:#989695;
 	}
 	.solution .list ul li span {
@@ -823,12 +826,14 @@
 		left: 0;
 		display: none;
 	}
-	.solution .list ul li:first-child i{
+	.solution .list ul li i.current{
 		color: #000;
-		font:700 18px simhei;
+		height: 23px;
+		font:700 18px/23px simhei;
 	}
-	.solution .list ul li:first-child span{
+	.solution .list ul li span.show{
 		display: block;
+		left: 0;
 		}
 		
 	/*右侧内容*/

@@ -11,38 +11,23 @@
 			$(".solution .content div").css("display","none");
 			$(".solution .content div").eq($(this).index()).css("display","block");
 			
+			//删除其他元素的类
+			$(this).siblings().find("i").removeClass("current");
+			$(this).siblings().find("span").removeClass("show");
+			
+			//添加当前元素的类
+			$(this).find("i").addClass("current");
+			$(this).find("span").addClass("show");
+			
 			if($(document.body).width() < 768)
 			{
-				
-				$(this).siblings().find("i").removeClass("current");
-				$(this).find("i").addClass("current");
-				return;
-					//修改样式 li 宽度144
-				$(this).siblings().find("i").animate({
-					"fontSize":"8px",
-					"fontWeight":400,
 				 
-				},100);
-			
-				$(this).siblings().find("i").css("color","#989695");
-				
-				$(this).siblings().find("span").hide();
-	//			$(this).find("span").show();
-				var ele = $(this);
-				$(this).find("i").animate({
-					"fontSize":"11px",
-					"fontWeight":700,
-	 			},100,function(){
-	 				
-	 				 //设置span的left值
+					var ele = $(this);			
+					 //设置span的left值
 	 				var liW = ele.find("i")[0].offsetWidth;
 	 				var left = (150-liW)/2;
-	 				ele.find("span").css("left",left);
-	 				ele.find("span").show();
-	 			});
-  				
-				$(this).find("i").css("color","#000");
-				//判断是否需要动画
+	 				ele.find("span").css("left",left);			 
+			     	//判断是否需要动画
 					// 1 计算当前元素居中的话,marginleft是否大于20 是否小于边界值 计算之前元素的总和
 					var sum = 190 * $(this).index();
 				
@@ -75,30 +60,7 @@
  				return;
 			}
 			 
-			//修改样式
-			$(this).siblings().find("i").animate({
-				"fontSize":"16px",
-				"fontWeight":400,
-			 
-				"height":"16px",
-				"lineHeight":"16px",
-			},100);
-			
-			$(this).siblings().find("i").css("color","#989695");
-			
-			$(this).siblings().find("span").hide();
-			$(this).find("span").css("left",0);
-			$(this).find("span").show();
-			$(this).find("i").animate({
-				"fontSize":"18px",
-				"fontWeight":700,
-		 
-				"height":"23px",
-				"lineHeight":"23px",
-			},100);
-			$(this).find("i").css("color","#000");
-			
-			
+	 
 			
 			
 			
@@ -171,6 +133,8 @@
 				return isFull;
 				}
 		
+				//声明变量来记录是否已经用代码触发过点击事件
+				var isTrigger = false;
 				$(window).resize(function () {
 					
 					//设置视频的拉伸模式
@@ -184,15 +148,40 @@
 					
 					//设置列表文字大小和线条的边距
 					
+					var left = 	$(".solution .list ul").css("marginLeft");
+					var left_span = 	$(".solution .list ul span.show").css("left");
+					var width = $(document.body).width();
 					if(width < 768)
 					{
+						if(width < 750)
+						{
+							if(isTrigger === false)
+							{
+								//需要将在小于768时候的距离设置给他 --> 重新出发点击事件
+								$(".solution .list ul li").eq(selectIndex).click();
+								isTrigger = true;
+							}
+						}
 						
 		
-					}else if(width < 1220)
-					{
-						$(".solution ul li").find("span").css("left",0);
 						
-					}else{
+						isTrigger = false;
+						
+						//如果两个数据都不为0 就将他们设置为0
+						if(parseInt(left) != 0)
+						{
+							// 消除列表的左侧外边距	
+							$(".solution .list ul").css("marginLeft",0);
+						} 
+						
+						
+						if(parseInt(left_span) != 0)
+						{
+							// 消除列表的左侧外边距	
+							$(".solution .list ul span.show").css("left",0);
+						} 
+						
+							$(".solution .list ul span").css("left",0);
 						
 					}
 					
