@@ -16,6 +16,14 @@ $(document).ready(function(){
 		$(this).parent().children().eq(2).find("img").attr('src','img/product/list_icon/cam icon.png');
 		$(this).parent().children().eq(3).find("img").attr('src','img/product/list_icon/sensor icon.png');
 		
+		//显示选中的图片  隐藏其他盒子 显示当前盒子
+		var className = ".page" + ($(this).index() + 1);
+		
+		$(className).siblings().hide();
+		
+		$(className).show();
+		
+		//切换选中的图片
 		switch($(this).index())
 		{
 			case 0:
@@ -35,6 +43,8 @@ $(document).ready(function(){
 				break;
 			
 		}
+		
+		
 		
 	});
 	
