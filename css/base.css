@@ -35,6 +35,11 @@ s,i,em{font-style:normal;text-decoration:none;}
     margin:0 auto;
     /*background-color: gray;*/
 }
+
+.jz {
+	display: flex;
+	justify-content: center;
+}
 .fl {
     float:left
 }
