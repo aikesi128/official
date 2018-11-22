@@ -1,0 +1,244 @@
+/*plus*/
+@media screen and (max-width: 767px) {
+	.w {
+		/*background-color: darkgoldenrod;*/
+		/*width: 375px;*/
+		width: 100%;
+	}
+	
+	html body {
+		height: 100%;
+	}
+	
+	.navi-site {
+		display: none;
+	}
+	
+	/*移动导航开始*/
+	.navi-m {
+		display: block;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+	
+	.navi-m {
+		height: 37px;
+		background-color: red; 
+		border-bottom: 1px solid #F2C846;
+		/*position: relative;*/
+		z-index: 2;
+	}
+	
+	.navi-m .title {
+		height: 100%;
+		background-color: #000000;
+		position: relative;
+	}
+	
+	.navi-m .title .show {
+		position: absolute;
+		width: 15px;
+		height: 12px;
+		left: 20px;
+		top: 13px;
+		
+	}
+	
+	.navi-m .btn {
+		position: absolute;
+		width: 13px;
+		height: 13px;
+		left: 20px;
+		top: 13px;
+		display: none;
+		
+	}
+	.navi-m .title .logo {
+		 
+		display: block;
+		margin: 0 auto;
+		padding-top: 10px;
+		width: 37px;
+		line-height: 37px;
+		
+	}
+	
+	.navi-m .menu  {
+		background: #000000;
+		display: none;
+		position: relative;
+		z-index: 2;
+	}
+	
+	.navi-m .menu  ul {
+		/*background: #000000;*/
+		height: 179px;
+		padding: 8px 0;
+		
+	}
+	
+	.navi-m .menu ul li {
+		height: 40px;
+		line-height: 40px;
+		margin:0 40px;
+		
+		font-family: simhei;
+		border-bottom:  1px solid #282828;
+	}
+	
+	.navi-m .menu ul li:last-child {
+		border: none;
+	}
+	
+	.navi-m .menu ul li a {
+		font-size: 15px;
+		color: #fff;;
+	}
+	 
+	/*移动导航结束*/
+	/*视频区域开始*/
+		.video {
+		height: 150px;
+		width: 100%;
+		background-color: #F9F9F9;
+		margin-top: 37px;
+		}
+ 	
+	.playcontent {
+		height: 100%;
+		text-align: center;
+		background-image:url(../img/topbackImg.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-origin: content-box;
+		overflow: hidden;
+		/*position: relative;*/
+ 	}
+	.playcontent h1 {
+		font-size: 11px;
+		height: 12px;
+		line-height: 12px;
+		margin-top: 50px;
+		padding-bottom: 13px;
+		font-family: simhei;
+		font-weight: 700;
+		color: rgba(0,0,0,.9);;
+	}
+	
+	.playcontent span {
+		display: block;
+		margin: 0 auto;
+		width: 45px;
+		height: 1px;
+		border-bottom: 1px solid #191813;
+		margin-bottom: 13px;
+	}
+ 	
+	.playcontent .play {
+		width: 62px;
+		height: auto;
+		cursor: pointer;
+		margin: 0 auto;
+	} 	
+	.playcontent .play img {
+		width: 62px;
+		height: auto;
+	}
+	
+	/*视频播放区域*/
+	 .playarea {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+ 		left: 0px;
+		top: 0px;
+		background-color: black;
+		display: none;
+		z-index: 2;
+	}
+	
+	
+	 .playarea video {
+		/*background: yellow;*/
+		width: 80%;
+		height: 80%;
+		/*padding-left: 10%;*/
+		/*padding-top: 5%;*/
+		object-fit: fill;
+		/*position: relative;*/
+		/*overflow: auto;*/
+		margin-left: 10%;
+		margin-top: 6%;
+	}
+	
+	 .playarea  i {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 20px;
+		left: 20px;
+		border-radius: 10px;
+		text-align: center;
+		line-height: 50px;
+		font-size: 40px;
+		font-weight: 700;
+		font-family: simhei;
+		color: rgba(255,255,255,1);
+		background-color: rgb(0,0,0,1);
+		opacity: 0.6;
+		cursor: pointer;
+
+		/*display: none;*/
+	}
+	/*视频区域结束*/
+
+ 
+	
+	/*解决方案结束*/
+	 
+	/*footer 开始*/
+	.footer {
+		text-align: center;
+	}
+	 .footer img {
+	 	display: block;
+	 	width: 65px;
+	 	height: auto;
+	 	margin: 0 auto;
+	 	padding-top: 20px;
+	 }
+	 
+	 .footer span {
+	 	display: block;
+		padding-top: 7px;
+		width: 236px;
+		height: 1px;
+		border-bottom: 1px solid #000;
+		margin: 0 auto;
+	 }
+	 
+	 .footer p {
+	 	color: rgba(0,0,0,.8);
+	 	font-size: 9px;
+	 	line-height: 20px;
+	 	padding-top: 8px;
+	 	padding-bottom: 13px;
+	 	
+	 }
+	 
+	 .footer a {
+	 	text-decoration: none;
+	 	color: #000000;
+	 	font-size: 12px;
+	 	line-height: 20px;
+	 	padding-bottom: 20px;
+	 	
+	 }
+	/*footer 结束 a29 16*/ 
+
+	 
+	
+}
