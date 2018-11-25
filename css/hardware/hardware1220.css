@@ -2,7 +2,7 @@
 /*ipad*/
 @media screen and (min-width:768px) and (max-width: 1220px) {
 	.w {
-		/*background-color: lightskyblue;*/
+		/*background-color: #fff;*/
 		width: 750px;
 		
 	}
@@ -208,7 +208,7 @@
 	/*公共部分*/
 	.page1 {
 		/*background-color: red;*/
-		display: block;
+		display: none;
 	}
 	
 	.page2 {
@@ -223,13 +223,13 @@
 	
 	.page4 {
 		/*background-color: pink;*/
-		display: none;
+		display: block;
 	}
 	.imgbox {
-		background-color: green;
+		/*background-color: green;*/
 	}
 	.textbox {
-		background-color: orchid;
+		/*background-color: orchid;*/
 	}
 	.imgbox img {
 		width: 144px;
@@ -242,7 +242,7 @@
 	.textbox  h3 {
 		color: #585858;
 		height: 38px;
-		font: 700 38px/38px simhei;
+		font: 700 34px/38px simhei;
 		padding-bottom: 19px;
 	}
 	
@@ -255,9 +255,9 @@
 	}
 	
 	.textbox p {
-		font: 17px/30px simhei;
+		font: 16px/27px simhei;
 		color: rgba(0,0,0,.8);
-		padding-bottom: 22px;
+		padding-bottom: 15px;
 		text-align: justify;
 	}
 	
@@ -275,13 +275,13 @@
 	
 	.textbox ul li img {
 		display: block;
-		height: 60px;
-		padding-bottom: 18px;
+		height: 50px;
+		padding-bottom: 11px;
 		margin: 0 auto;
 	}
 	
 	.textbox ul li span {
-		height: 16px;
+		height: 14px;
 		font: 14px/15px simhei;
 		color: rgba(0,0,0,.8);
 	}
@@ -291,50 +291,52 @@
 		/*s1*/
 		.page1 .section1 {
 			padding: 80px 0 60px 0;
-			background-color: pink;
+			/*background-color: pink;*/
 			overflow: hidden;
 		}
 		.page1 .section1 .textbox p {
 			width: 407px;
 		}
 		
-		 
+		 .page1 .section1 .imgbox img {
+			width: 165px;
+		}
 		
 		.page1 .imgbox {
-			padding: 70px 165px 0px 79px;
+			padding: 100px 95px 0px 29px;
 			
 		}
 		
 		/*s2*/
 		.page1 .section2 {
-			padding: 129px 0 97px 0;
+			padding: 80px 0 77px 0;
 			background-color: #FBFBFB;
 			overflow: hidden;
 		}
 		.page1 .section2 .textbox p {
-			width: 684px;
+			width: 364px;
 		}
 		
 		.page1 .section2 .textbox {
-			padding-left: 80px;
+			padding-left: 20px;
 		}
 	 
 		.page1 .section2 .imgbox img {
-			width: 325px;
+			width: 225px;
 		}
 		.page1 .section2 .imgbox {
-			padding: 82px 0px 0px 69px;
+			padding: 122px 0px 0px 69px;
 			
 		}
 		
 		/*s3*/
 		.page1 .section3 {
-			padding: 237px 0 300px 0;
-			background-color: lightblue;
+			padding: 107px 0 100px 0;
+			/*background-color: lightblue;*/
 			overflow: hidden;
 		}
 		.page1 .section3 .textbox p {
-			width: 634px;
+			width: 384px;
 		}
 		
 		.page1 .section3 .textbox {
@@ -342,21 +344,21 @@
 		}
 	 
 		.page1 .section3 .imgbox img {
-			width: 342px;
+			width: 202px;
 		}
 		.page1 .section3 .imgbox {
-			padding: 0px 150px 0px 45px;
+			padding: 90px 60px 0px 15px;
 			
 		}
 		
 		/*s4*/
 		.page1 .section4 {
 			padding: 0 0 74px 0px;
-			background-color: lightblue;
+			/*background-color: lightblue;*/
 			overflow: hidden;
 		}
 		.page1 .section4 .textbox p {
-			width: 629px;
+			width: 389px;
 		}
 		
 		.page1 .section4 .textbox {
@@ -364,17 +366,17 @@
 		}
 	 
 		.page1 .section4 .imgbox img {
-			width: 368px;
+			width: 228px;
 		}
 		.page1 .section4 .imgbox {
-			padding: 122px 0px 0px 116px;
+			padding: 122px 0px 0px 56px;
 			
 		}
 		
 		div.s34 {
 			/*width: 1920px;*/
 			margin: 0 auto;
-			height: 1501px;
+			height: 1201px;
 			background: url(../../img/bg_cgq&clzdy.png) no-repeat center bottom;
 			/*background-size: cover;*/
 			overflow: hidden;
@@ -390,12 +392,12 @@
 		
 		/*s1*/
 		.page2 .section1 {
-			padding: 100px 0 138px 0;
-			background-color: lightblue;
+			padding: 80px 0 78px 0;
+			/*background-color: lightblue;*/
 			overflow: hidden;
 		}
 		.page2 .section1 .textbox p {
-			width: 590px;
+			width: 400px;
 			/*line-height: 30px;*/
 		}
 		
@@ -404,44 +406,44 @@
 		}
 	 
 		.page2 .section1 .imgbox img {
-			width: 377px;
+			width: 207px;
 		}
 		.page2 .section1 .imgbox {
-			padding: 38px 193px 72px 34px;
+			padding: 108px 73px 72px 4px;
 			
 		}
 		
 		/*s2*/
 		.page2 .section2 {
-			padding: 131px 0 167px 0;
+			padding: 41px 0 87px 0;
 			background-color: #FBFBFB;
 			overflow: hidden;
 		}
 		.page2 .section2 .textbox p {
-			width: 579px;
+			width: 400px;
 			/*line-height: 30px;*/
 		}
 		
 		.page2 .section2 .textbox {
-			padding-left: 10;
+			padding-left: 00;
 		}
 	 
 		.page2 .section2 .imgbox img {
-			width: 454px;
+			width: 250px;
 		}
 		.page2 .section2 .imgbox {
-			padding: 57px 0px 0px 122px;
+			padding: 127px 0px 0px 50px;
 			
 		}
 		
 		/*s3*/
 		.page2 .section3 {
-			padding: 226px 0 195px 0;
-			background-color: pink;
+			padding: 46px 0 5px 0;
+			/*background-color: aliceblue;*/
 			overflow: hidden;
 		}
 		.page2 .section3 .textbox p {
-			width: 600px;
+			width: 400px;
 			/*line-height: 30px;*/
 		}
 		
@@ -450,16 +452,16 @@
 		}
 	 
 		.page2 .section3 .imgbox img {
-			width: 424px;
+			width: 220px;
 		}
 		.page2 .section3 .imgbox {
-			padding: 34px 196px 40px 0px;
+			padding: 124px 96px 40px 50px;
 			
 		}
 		
 		.page2 .p2s3 {
 			/*width: 1920px;*/
-			height: 765px;
+			height: 465px;
 			background: url(../../img/intro_bkimg.png) no-repeat center bottom;
 			margin: 0 auto;
 			overflow: hidden;
@@ -472,27 +474,28 @@
 	/*page3 开始*/
 	
 		.page3 .textbox p {
-			line-height: 30px;
+			line-height: 25px;
 		}
 	
 		.p3s3456 {
-			height: 3054px;
+			height: 1754px;
 			background: url(../../img/bg_xcjly_m1s_v1s.png) no-repeat center bottom;
 			margin: 0 auto;
 			background-color: red;
 			overflow: hidden;
-			background-size: 100% 100%;
+/*			background-size: 100% 100%;*/
+			background-size: cover;
 			/*background-color: darkorchid;*/
 		}
 	
 		 /*s1*/
 		.page3 .section1 {
-			padding: 100px 0 95px 0;
-			background-color: coral;
+			padding: 80px 0 35px 0;
+			background-color: #fff;
 			overflow: hidden;
 		}
 		.page3 .section1 .textbox p {
-			width: 578px;
+			width: 400px;
 			/*text-align: center;*/
 		 
 		}
@@ -501,43 +504,43 @@
 		}
 		
 		.page3 .section1 .imgbox img {
-			width: 401px;
+			width: 201px;
 		}
 		.page3 .section1 .imgbox {
-			padding: 83px 144px 123px 74px;
+			padding: 83px 74px 133px 34px;
 			
 		}
 		
 		/*s2*/
 		.page3 .section2 {
-			padding: 170px 0 93px 0;
-			background-color: paleturquoise;
+			padding: 70px 0 3px 0;
+			background-color: #FBFBFB;
 			overflow: hidden;
 		}
 		.page3 .section2 .textbox p {
-			width: 580px;
+			width: 400px;
 		 
 		}
 		.page3 .section2 .textbox  {
-			padding-left: 10px;
+			padding-left: 20px;
 		}
 		
 		.page3 .section2 .imgbox img {
-			width: 334px;
+			width: 204px;
 		}
 		.page3 .section2 .imgbox {
-			padding: 8px 0 0px 214px;
+			padding: 88px 0 0px 74px;
 			
 		}
 		
 		/*s3*/
 		.page3 .section3 {
-			padding: 191px 0 390px 0;
-			background-color: blueviolet;
+			padding: 121px 0 50px 0;
+			/*background-color: blueviolet;*/
 			overflow: hidden;
 		}
 		.page3 .section3 .textbox p {
-			width: 574px;
+			width: 400px;
 		 
 		}
 		.page3 .section3 .textbox  {
@@ -545,43 +548,43 @@
 		}
 		
 		.page3 .section3 .imgbox img {
-			width: 514px;
+			width: 220px;
 		}
 		.page3 .section3 .imgbox {
-			padding: 107px 100px 188px 0px;
+			padding: 107px 70px 18px 10px;
 			
 		}
 		
 		/*s4*/
 		.page3 .section4 {
-			padding: 0px 0 342px 0;
-			background-color: darkgoldenrod;
+			padding: 0px 0 42px 0;
+			/*background-color: darkgoldenrod;*/
 			overflow: hidden;
 		}
 		.page3 .section4 .textbox p {
-			width: 582px;
+			width: 400px;
 		 
 		}
 		.page3 .section4 .textbox  {
-			padding-left: 10px;
+			padding-left: 0px;
 		}
 		
 		.page3 .section4 .imgbox img {
-			width: 538px;
+			width: 230px;
 		}
 		.page3 .section4 .imgbox {
-			padding: 69px 0 0 65px;
+			padding: 99px 0 0 65px;
 			
 		}
 		
 		/*s5*/
 		.page3 .section5 {
-			padding: 0px 0 250px 0;
-			background-color: firebrick;
+			padding: 20px 0 60px 0;
+			/*background-color: firebrick;*/
 			overflow: hidden;
 		}
 		.page3 .section5 .textbox p {
-			width: 581px;
+			width: 400px;
 		 
 		}
 		.page3 .section5 .textbox  {
@@ -589,32 +592,32 @@
 		}
 		
 		.page3 .section5 .imgbox img {
-			width: 477px;
+			width: 230px;
 		}
 		.page3 .section5 .imgbox {
-			padding: 168px 147px 71px 0px;
+			padding: 118px 87px 11px 0px;
 			
 		}
 		
 		/*s5*/
 		.page3 .section6 {
-			padding: 0px 0 140px 0;
-			background-color: palegreen;
+			padding: 10px 0 0px 0;
+			/*background-color: palegreen;*/
 			overflow: hidden;
 		}
 		.page3 .section6 .textbox p {
-			width: 580px;
+			width: 400px;
 		 
 		}
 		.page3 .section6 .textbox  {
-			padding-left: 10px;
+			padding-left: 0px;
 		}
 		
 		.page3 .section6 .imgbox img {
-			width: 481px;
+			width: 231px;
 		}
 		.page3 .section6 .imgbox {
-			padding: 183px 0px 0px 110px;
+			padding: 163px 0px 0px 60px;
 			
 		}
 		
@@ -624,20 +627,20 @@
 	
 		/*s1*/
 		.page4 .section1 {
-			padding: 100px 0 164px 0;
-			background-color: greenyellow;
+			padding: 80px 0 64px 0;
+			/*background-color: greenyellow;*/
 			overflow: hidden;
 		}
 		.page4 .section1 .textbox p {
-			width: 599px;
+			width: 400px;
 			/*line-height: 30px;*/
 		}
 		
 		.page4 .section1 .imgbox img {
-			width: 303px;
+			width: 203px;
 		}
 		.page4 .section1 .imgbox {
-			padding: 0px 233px 0px 81px;
+			padding: 40px 83px 0px 51px;
 			
 		}
 		
@@ -647,25 +650,25 @@
 	 
 	 	/*s2*/
 		.page4 .section2 {
-			padding: 120px 0 264px 0;
+			padding: 80px 0 94px 0;
 			background-color: #FCFCFC;
 			overflow: hidden;
 		}
 		.page4 .section2 .textbox p {
-			width: 572px;
+			width: 402px;
 		 
 		}
 		.page4 .section2 .textbox  {
 		 
-			padding-left: 10px;
+			padding-left: 0px;
 		 
 		}
 		
 		.page4 .section2 .imgbox img {
-			width: 253px;
+			width: 203px;
 		}
 		.page4 .section2 .imgbox {
-			padding: 0px 0 0px 278px;
+			padding: 0px 0 0px 58px;
 			
 		}
 		
@@ -674,19 +677,19 @@
 		}
 		
 		.p434s {
-			height: 1501px;
+			height:801px;
 			background: url(../../img/bg_cgq&clzdy.png) no-repeat center;
 		}
 		
 		
 		/*s3*/
 		.page4 .section3 {
-			padding: 229px 0 502px 0;
-			background-color: blueviolet;
+			padding: 159px 0 72px 0;
+			/*background-color: blueviolet;*/
 			overflow: hidden;
 		}
 		.page4 .section3 .textbox p {
-			width: 590px;
+			width: 400px;
 		 
 		}
 		.page4 .section3 .textbox  {
@@ -696,32 +699,32 @@
 		}
 		
 		.page4 .section3 .imgbox img {
-			width: 366px;
+			width: 200px;
 		}
 		.page4 .section3 .imgbox {
-			padding: 0 168px 0px 80px;
+			padding: 20px 78px 0px 40px;
 			
 		}
 		 
 		 /*s4*/
 		.page4 .section4 {
-			padding: 0 0 127px 0;
-			background-color: coral;
+			padding: 170px 0 167px 0;
+			/*background-color: coral;*/
 			overflow: hidden;
 		}
 		.page4 .section4 .textbox p {
-			width: 569px;
+			width: 400px;
 		 
 		}
 		.page4 .section4 .textbox  {
-			padding-left: 10px;
+			padding-left: 0px;
 		}
 		
 		.page4 .section4 .imgbox img {
-			width: 284px;
+			width: 164px;
 		}
 		.page4 .section4 .imgbox {
-			padding: 37px 0 0px 205px;
+			padding: 7px 0 0px 95px;
 			
 		}
 		
@@ -733,6 +736,7 @@
 	/*footer 开始*/
 	.footer {
 		text-align: center;
+		margin-top: 50px;
 	}
 	 .footer img {
 	 	display: block;
