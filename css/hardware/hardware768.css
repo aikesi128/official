@@ -55,6 +55,15 @@
 		display: none;
 		
 	}
+	
+		.navi-m .title .home {
+		display: block;
+		margin: 0 auto;
+		/*padding-top: 10px;*/
+		width: 37px;
+		line-height: 37px;
+		
+	}
 	.navi-m .title .logo {
 		 
 		display: block;
@@ -253,7 +262,7 @@
 	/*公共部分*/
 	.page1 {
 		/*background-color: red;*/
-		display: none;
+		display: block;
 	}
 	
 	.page2 {
@@ -263,7 +272,7 @@
 	
 	.page3 {
 		/*background-color: blue;*/
-		display: block;
+		display: none;
 	}
 	
 	.page4 {
@@ -315,6 +324,7 @@
 		text-align: left;
 		padding: 0 10px;
 		box-sizing: border-box;
+		text-align: justify;
 	}
 	
 	.textbox ul {

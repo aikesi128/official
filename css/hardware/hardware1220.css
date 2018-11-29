@@ -208,7 +208,7 @@
 	/*公共部分*/
 	.page1 {
 		/*background-color: red;*/
-		display: none;
+		display: block;
 	}
 	
 	.page2 {
@@ -223,7 +223,7 @@
 	
 	.page4 {
 		/*background-color: pink;*/
-		display: block;
+		display: none;
 	}
 	.imgbox {
 		/*background-color: green;*/

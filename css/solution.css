@@ -328,6 +328,14 @@
 		display: none;
 		
 	}
+		.navi-m .title .home {
+		display: block;
+		margin: 0 auto;
+		/*padding-top: 10px;*/
+		width: 37px;
+		line-height: 37px;
+		
+	}
 	.navi-m .title .logo {
 		 
 		display: block;
@@ -548,14 +556,17 @@
 	/*右侧内容*/
 	.solution div.content div {
 		display: none;
+		/*width: 100%;*/
 		margin: 0 20px;
 		border-top: 1px solid #878787;
 		margin-top: 25px;
+		box-sizing: content-box;
 	}
 	
 	.solution .content div:first-child
 	{
 		display: block;
+		
 	}
 	
 	.solution .content p {
@@ -566,15 +577,26 @@
 		padding-bottom: 24px;
 		border-bottom: 1px solid #878787;
 		margin-bottom: 13px;
+		
 	}
 	.solution .content ul {
 		margin-left: 0px;
+		/*width: 100%;*/
+		border: 1px solid #FFFFFF;
+		/*height: 60px;*/
+		overflow: hidden;
+		/*display: flex;*/
+		/*justify-content: flex-start;*/
 	}
 	.solution .content ul li {
 		float: left;
-		margin-right: 13px;
+		/*margin-right: 13px;*/
+		 
+		margin: 0 7px;
 		padding-bottom: 10px;
-		text-align: center;
+		/*background-color: red;*/
+		line-height: 30px;
+		/*text-align: center;*/
  	}
  	
  	.solution .content ul li img {
@@ -633,7 +655,7 @@
 /*ipad*/
 @media screen and (min-width:768px) and (max-width: 1220px) {
 	.w {
-		background-color: lightskyblue;
+		/*background-color: lightskyblue;*/
 		width: 750px;
 		
 	}

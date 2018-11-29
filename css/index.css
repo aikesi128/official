@@ -985,7 +985,7 @@
 	
 	.navi-m {
 		height: 37px;
-		background-color: red; 
+		/*background-color: red;*/ 
 		border-bottom: 1px solid #F2C846;
 		/*position: relative;*/
 		z-index: 2;
@@ -1013,6 +1013,14 @@
 		left: 20px;
 		top: 13px;
 		display: none;
+		
+	}
+	.navi-m .title .home {
+		display: block;
+		margin: 0 auto;
+		/*padding-top: 10px;*/
+		width: 37px;
+		line-height: 37px;
 		
 	}
 	.navi-m .title .logo {
@@ -1062,6 +1070,7 @@
 	.video {
 		height: 556px;
 		width: 100%;
+		margin-top: 50px;
 	}
  	
 	.playcontent {
