@@ -194,6 +194,7 @@
 	}
 	.intro .w p.item1 {
 		/*height: 190px;*/
+		text-align: justify;
 		padding-bottom: 45px;
 		font-size: 16px;
 		color: rgba(0,0,0,.8);
@@ -201,6 +202,7 @@
 	}
 	
 	.intro .w p.item2 {
+		text-align: justify;
 		/*height: 165px;*/
 		font-size: 16px;
 		color: rgba(0,0,0,.8);
