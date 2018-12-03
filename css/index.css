@@ -58,6 +58,8 @@
 	.video {
 		height: 718px;
 		width: 100%;
+		background: #FAFAFA;
+		
 	}
  	
 	.playcontent {
@@ -66,6 +68,9 @@
 		/*background: #F4C947;*/
 		overflow: hidden;
 		position: relative;
+		
+		background: url(../img/video-back.png) no-repeat;
+		background-size: cover;
  	}
 	.playcontent h1 {
 		font-size: 39px;
@@ -1072,7 +1077,7 @@
 	.video {
 		height: 556px;
 		width: 100%;
-		margin-top: 50px;
+		margin-top: 40px;
 	}
  	
 	.playcontent {
@@ -1081,6 +1086,8 @@
 		/*background: #F4C947;*/
 		overflow: hidden;
 		position: relative;
+		background: url(../img/video-back.png) no-repeat  center;
+		background-size: contain;
  	}
 	.playcontent h1 {
 		font-size: 20px;
@@ -2168,6 +2175,8 @@
 		/*background: #F4C947;*/
 		overflow: hidden;
 		position: relative;
+		background: url(../img/video-back.png) no-repeat  center;
+		background-size: contain;
  	}
 	.playcontent h1 {
 		font-size: 34px;
