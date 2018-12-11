@@ -287,7 +287,9 @@
 		font-size: 46px;
 		font-weight: 400;
 		font-family: simhei;
-		color: rgba(0,0,0,.9);
+		/*color: rgba(0,0,0,.9);*/
+		color: #ADADAD;
+		opacity: .9;
 		cursor: pointer;
 		position: relative;
 	}
@@ -307,10 +309,12 @@
 	 ul.content span.first {
 	 	/*background-color: red;*/
 	 	opacity: 1;
+	 	
 	 }
 	 
 	.list-l ul.content li:first-child {
 		font-weight: 700;
+		color: #000;
 	}
 	.list-r div {
 		display: none;
@@ -1249,7 +1253,7 @@
 		overflow: hidden;
 		
 		/*float: left;*/
-		/*background-color: red;*/
+		/*background-color: red;!important*/
 		margin: 0 auto;
  	}
 	
@@ -1310,7 +1314,7 @@
  	
  	
 	.list .list-l ul.content {
-		width: 200%;
+		width: 350%;
 		height: 42px;
 		margin: 0 0 0 40px;
 		/*margin-left: 40px;*/
@@ -1333,6 +1337,7 @@
 	}
 	.list-l ul.content li i {
 		display: block;
+		width: auto;
 		line-height: 16px;
 		font-size: 16px;
 		font-weight: 400;
@@ -1896,10 +1901,10 @@
 	}
 	.soft ul {
 		height: 30px;
-		width: 200%;
+		width: 400%;
 		/*width: auto;*/
 		margin-top: 48px;
-		margin-left: 20px;
+		margin-left: 10px;
 	}
 	.soft ul li {
 		width: auto;
@@ -1945,6 +1950,7 @@
 		display: none;
 		/*background-color: orange;*/
 		overflow: hidden;
+		margin: 0 auto;
 	}
 	
 	.soft div.first {
@@ -1958,8 +1964,8 @@
 		height: auto;
 		/*float: left;*/
 		/*float: auto;*/
-		padding-left: 43px;
-		padding-right: 13px;
+		padding-left: 10px;
+		padding-right: 10px;
 		padding-bottom: 90px;
 		/*vertical-align: top;*/ 
 		
@@ -1975,7 +1981,8 @@
 		color: rgba(0,0,0,.8);
 		font-family: simhei;
 		/*float: right;*/
-		padding-right: 40px;
+		padding-right: 10px;
+		padding-left: 10px;
 	 
  	}
 	
@@ -2110,7 +2117,7 @@
 /*ipad*/
 @media screen and (min-width:768px) and (max-width: 1220px) {
 	.w {
-		/*background-color: #fff;*/
+		/*background-color: darkred;*/
 		width: 750px;
 	}
 	

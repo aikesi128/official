@@ -12,6 +12,11 @@
 			//不加粗所有盒子, 加粗当前盒子文字
 			$(".list-l .content li i").css("fontWeight",400).eq($(this).index()).css("fontWeight",700);
 			
+			//变灰所有盒子, 设置为黑色当前盒子文字
+			$(".list-l .content li i").css("color","#ADADAD").eq($(this).index()).css("color","#000");
+			
+			
+			
 			//显示黄色线条
 			$(".list-l .content li span").css("opacity",0);
 			$(".list-l .content li").eq($(this).index()).children().last().css("opacity",1);
@@ -288,5 +293,11 @@
  
  
  
+ 		
+ 
 		
 	})
+window.onload = function(){
+ 			
+// 			alert($(document.body).width());
+ 		}
