@@ -143,7 +143,7 @@
 						
 						$(".playarea video").css("object-fit","fill");
 					}else {
-						$(".playarea video").css("object-fit","none");
+//						$(".playarea video").css("object-fit","none");
 					}
 					
 					//设置列表文字大小和线条的边距

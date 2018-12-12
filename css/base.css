@@ -63,4 +63,12 @@ s,i,em{font-style:normal;text-decoration:none;}
 .font16{ font-size: 16px;}
 	
 	
+/*针对谷歌和火狐全屏的时候显示区域较小的解决办法*/
+
+.fullscreen {
+	
+	object-fit: fill;
+	
+}
+	
 /*公共部分*/

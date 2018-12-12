@@ -64,14 +64,15 @@
 	}
  	
 	.playcontent {
-		/*height: 100%;*/
-		/*text-align: center;*/
-		/*background-image:url(../img/topbackImg.png);*/
-		/*background-repeat: no-repeat;*/
-		/*background-position: center center;*/
+		/*height: 100%;
+		text-align: center;
+		margin: 0 auto;
+		background-image:url(../img/topbackImg.png);
+		background-repeat: no-repeat;
+		background-position: center center;*/
 		/*background-size: 100% 100%;*/
-		/*overflow: hidden;*/
-		/*position: relative;*/
+		/*overflow: hidden;
+		position: relative;*/
  	}
 	.playcontent h1 {
 		font-size: 23px;

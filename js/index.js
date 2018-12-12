@@ -243,7 +243,7 @@
 						console.log("退出全屏");
 						$(".playarea video").css("object-fit","fill");
 					}else {
-						$(".playarea video").css("object-fit","none");
+//						$(".playarea video").css("object-fit","none");
 					}
 					
 				});
@@ -289,15 +289,7 @@
  				}
  				
  			});
- 
- 
- 
- 
- 		
- 
+
 		
 	})
-window.onload = function(){
- 			
-// 			alert($(document.body).width());
- 		}
+ 

@@ -25,7 +25,7 @@
 	
 	.navi-m {
 		height: 37px;
-		background-color: red; 
+		/*background-color: red;*/ 
 		border-bottom: 1px solid #F2C846;
 		/*position: relative;*/
 		z-index: 2;
@@ -41,8 +41,13 @@
 		position: absolute;
 		width: 15px;
 		height: 12px;
-		left: 20px;
-		top: 13px;
+		left: 0px;
+		padding-left: 20px;
+		top: 0px;
+		padding-top: 13px;
+		/*background-color: blue;*/
+		padding-bottom: 12px;
+		padding-right: 20px;
 		
 	}
 	
@@ -50,8 +55,13 @@
 		position: absolute;
 		width: 13px;
 		height: 13px;
-		left: 20px;
-		top: 13px;
+		left: 0px;
+		padding-left: 20px;
+		top: 0px;
+		padding-top: 13px;
+		padding-bottom: 12px;
+		padding-right: 20px;
+		/*background-color: red;*/
 		display: none;
 		
 	}
@@ -103,7 +113,9 @@
 	
 	.navi-m .menu ul li a {
 		font-size: 15px;
-		color: #fff;;
+		color: #fff;
+		display: block;
+		width: 100%;
 	}
 	 
 	/*移动导航结束*/
@@ -172,15 +184,15 @@
 	
 	 .playarea video {
 		/*background: yellow;*/
-		width: 80%;
-		height: 80%;
+		width: 100%;
+		height: auto;
 		/*padding-left: 10%;*/
 		/*padding-top: 5%;*/
 		object-fit: fill;
 		/*position: relative;*/
 		/*overflow: auto;*/
-		margin-left: 10%;
-		margin-top: 6%;
+		margin-left: 0%;
+		margin-top: 20%;
 	}
 	
 	 .playarea  i {
@@ -200,7 +212,7 @@
 		opacity: 0.6;
 		cursor: pointer;
 
-		/*display: none;*/
+		display: none;
 	}
 	/*视频区域结束*/
 
